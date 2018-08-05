@@ -9,8 +9,8 @@ Final project in Udacity Front-End Nanodegree in React
 
 ## To run this app
 1. Clone/download all files
-2. npm install
-3. npm run (the app will be running at localhost:3000)
+2. install all project dependencies with npm install;
+3. start the development server with npm start (the app will be running at localhost:3000).
 
 ## About the app
 - The app is showing the list of venues and their associated map.
@@ -20,3 +20,8 @@ Final project in Udacity Front-End Nanodegree in React
 ## The Service Worker
 - The Service Worker was built within the Create-React-App.
 - The service worker is only enabled in the production environment -> npm run build.
+
+### App was built with:
+- ReactJS,
+- JavaScript ES6,
+- Bootstrap.
