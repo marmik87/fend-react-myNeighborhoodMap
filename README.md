@@ -8,7 +8,7 @@ Final project in Udacity Front-End Nanodegree in React
 - Venues's data are fetched from [FourSquareAPI](https://developer.foursquare.com/).
 
 ## To run this app
-1. Clone/download all files
+1. Clone/download all files;
 2. install all project dependencies with npm install;
 3. start the development server with npm start (the app will be running at localhost:3000).
 
@@ -19,7 +19,12 @@ Final project in Udacity Front-End Nanodegree in React
 
 ## The Service Worker
 - The Service Worker was built within the Create-React-App.
-- The service worker is only enabled in the production environment -> npm run build.
+- The service worker is only enabled in the production environment:
+
+## Steps for testing in production
+1. npm run build;
+2. serve -s build;
+3. open App on localhost:5000.
 
 ### App was built with:
 - ReactJS,
