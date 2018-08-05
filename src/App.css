@@ -1,0 +1,26 @@
+.App-title {
+  font-size: 1.5em;
+}
+
+.App-intro {
+  font-size: large;
+}
+
+.app-footer {
+  background-color: #222;
+  height: auto;
+  color: white;
+  text-align: center;
+}
+
+.app-footer a {
+  color: white;
+}
+
+address {
+  margin-bottom: 0 !important;
+}
+
+h1 {
+  text-align: center;
+}
