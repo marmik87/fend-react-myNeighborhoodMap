@@ -26,6 +26,12 @@ Final project in Udacity Front-End Nanodegree in React
 2. serve -s build;
 3. open App on localhost:5000.
 
+## Error Handle with Google Maps API
+- I've added the <ErrorBoundary> Component to deal with catching the GoogleMaps Errors (as the app uses the react-google-maps library).
+- In the dev mode (localhost:3000) there is the window alert shown.
+- In the prod mode (localhost:5000) there is another UI shown.
+- (this error handling was made with ReactJS documentation https://reactjs.org/docs/error-boundaries.html.)
+
 ### App was built with:
 - ReactJS,
 - JavaScript ES6,
