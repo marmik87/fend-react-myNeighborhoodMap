@@ -5,6 +5,14 @@ import { withGoogleMap, Marker, GoogleMap } from 'react-google-maps';
 
 class Map extends Component {
 
+  gm_authFailure() {
+    window.alert("Google Maps error! Please try again later.")
+  }
+
+  componentDidCatch(error) {
+    alert("Google Maps error! Please try again later.")
+  }
+
   render() {
 
   const GoogleMapApp = withGoogleMap(props => (
@@ -12,6 +20,7 @@ class Map extends Component {
         defaultCenter = {{lat: 50.024488, lng: 14.590685}}
         defaultZoom = { 14 }
       >
+
 
       {/* Adding markers on the map */}
       {this.props.venues.map((venue) =>

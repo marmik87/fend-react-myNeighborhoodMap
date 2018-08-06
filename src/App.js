@@ -8,6 +8,7 @@ import LocationList from './components/LocationList.js'
 import Map from './components/Map.js';
 import InfoWindow from './components/InfoWindow.js'
 import Footer from './components/Footer.js'
+import ErrorBoundary from './components/ErrorBoundary.js'
 
 class App extends Component {
 
@@ -83,7 +84,6 @@ class App extends Component {
         {/* If there was problem with FourSquare Data, show the alert */}
         {isLoaded === false && (
           <Alert bsStyle="danger">
-            <p>Oh snap! You got an error!</p>
             <p>Data from FourSquare was not loaded. Please try again later.</p>
           </Alert>
         )}
@@ -92,6 +92,7 @@ class App extends Component {
          <Row className="show-grid">
            <Col sm={12}>
             <FormControl
+              aria-label="search"
               role="search"
               type="text"
               placeholder="Search by venue name"
@@ -102,7 +103,7 @@ class App extends Component {
           </Row>
 
           <br/>
-          
+
           <Grid fluid>
             <Row className="show-grid">
               <Col sm={6}>
@@ -123,12 +124,15 @@ class App extends Component {
 
           <Row className="show-grid">
             <Col sm={12}>
-              <Map
-                venues={filteredVenues}
-                openInfoWindow={(venue) => this.openInfoWindow(venue)}
-                />
+              <ErrorBoundary>
+                <Map
+                  venues={filteredVenues}
+                  openInfoWindow={(venue) => this.openInfoWindow(venue)}
+                  />
+              </ErrorBoundary>
             </Col>
           </Row>
+
         </Grid>
         <Footer />
       </div>
