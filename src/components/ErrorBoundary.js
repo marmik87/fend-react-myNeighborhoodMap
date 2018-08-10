@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 
 /* https://reactjs.org/docs/error-boundaries.html */
 
