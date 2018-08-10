@@ -21,7 +21,6 @@ class Map extends Component {
         defaultZoom = { 14 }
       >
 
-
       {/* Adding markers on the map */}
       {this.props.venues.map((venue) =>
         <Marker
