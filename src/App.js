@@ -3,6 +3,7 @@ import escapeRegExp from 'escape-string-regexp';
 
 import { Alert, Grid, Row, Col, PageHeader, FormControl } from 'react-bootstrap';
 import './App.css';
+import teal from '@material-ui/core/colors/teal';
 
 import LocationList from './components/LocationList.js'
 import Map from './components/Map.js';
@@ -121,7 +122,7 @@ class App extends Component {
               </Col>
             </Row>
           </Grid>
-
+{/*
           <Row className="show-grid">
             <Col sm={12}>
               <ErrorBoundary>
@@ -132,7 +133,7 @@ class App extends Component {
               </ErrorBoundary>
             </Col>
           </Row>
-
+*/}
         </Grid>
         <Footer />
       </div>
